@@ -4,7 +4,6 @@ const credentials = require('../credentials/keys.json')
 
 async function robotImage(serchTerm) {
     const arrayImages = await minerarImagesGoogle(serchTerm);
-    console.dir(you, {depth:null});
 
     async function minerarImagesGoogle(arg){
         const response = await customSearch.cse.list({
